@@ -30,37 +30,121 @@
 
     <!--</LinearLayout>-->
 
-    <LinearLayout android:id="@+id/pin_layout"
+    <!--<LinearLayout android:id="@+id/pin_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_gravity="center_horizontal">-->
+
+        <!--<EditText android:id="@+id/pin_first_edittext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="@string/pin_content_desc"-->
+            <!--style="@style/pin_edittext_style" />-->
+
+        <!--<EditText android:id="@+id/pin_second_edittext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="@string/pin_content_desc"-->
+            <!--style="@style/pin_edittext_style" />-->
+
+        <!--<EditText android:id="@+id/pin_third_edittext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="@string/pin_content_desc"-->
+            <!--style="@style/pin_edittext_style" />-->
+
+        <!--<EditText android:id="@+id/pin_forth_edittext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="@string/pin_content_desc"-->
+            <!--style="@style/pin_edittext_style" />-->
+    <!--</LinearLayout>-->
+
+    <!--<EditText android:id="@+id/pin_hidden_edittext"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@null"-->
+        <!--android:cursorVisible="false"-->
+        <!--android:password="true"-->
+        <!--android:maxLength="5"-->
+        <!--android:textColor="#00000000"-->
+        <!--android:contentDescription="@string/pin_content_desc" />-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_grey"
+            >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter MPIN"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal">
-
-        <EditText android:id="@+id/pin_first_edittext"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:id="@+id/imageview_circle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/pin_content_desc"
-            style="@style/pin_edittext_style" />
-
-        <EditText android:id="@+id/pin_second_edittext"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            />
+        <ImageView
+            android:id="@+id/imageview_circle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/pin_content_desc"
-            style="@style/pin_edittext_style" />
-
-        <EditText android:id="@+id/pin_third_edittext"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            />
+        <ImageView
+            android:id="@+id/imageview_circle3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/pin_content_desc"
-            style="@style/pin_edittext_style" />
-
-        <EditText android:id="@+id/pin_forth_edittext"
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            />
+        <ImageView
+            android:id="@+id/imageview_circle4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/pin_content_desc"
-            style="@style/pin_edittext_style" />
+            android:layout_margin="6dp"
+            android:src="@drawable/circle"
+            />
+        </LinearLayout>
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_grey"
+            >
+            <EditText
+                android:id="@+id/editText_enter_mpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:visibility="visible" >
+            </EditText>
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -138,4 +222,5 @@
     </LinearLayout>
 
 
+    </LinearLayout>
 </LinearLayout>
